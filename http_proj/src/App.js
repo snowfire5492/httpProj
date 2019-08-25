@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-import Blog from './containers/Blog/Blog';
+import Blog from './Containers/Blog/Blog';
 
 class App extends Component {
   render() {
