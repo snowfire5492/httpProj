@@ -4,8 +4,8 @@ import Post from '../../Components/Post/Post';
 import FullPost from '../../Components/FullPost/FullPost';
 import NewPost from '../../Components/NewPost/NewPost';
 import './Blog.css';
-import axios from 'axios';
-
+//import axios from 'axios';
+import axios from '../../axios';
 class Blog extends Component {
 
     state = {
