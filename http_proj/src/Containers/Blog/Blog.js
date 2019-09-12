@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
-import Post from '../../Components/Post/Post';
-import FullPost from '../../Components/FullPost/FullPost';
-import NewPost from '../../Components/NewPost/NewPost';
+
 import './Blog.css';
 //import axios from 'axios';
 import axios from '../../axios';
@@ -65,12 +63,7 @@ class Blog extends Component {
                 <section className="Posts">
                     {posts}
                 </section>
-                <section>
-                    <FullPost id={this.state.selectedPostId}/>
-                </section>
-                <section>
-                    <NewPost />
-                </section>
+                
             </div>
         );
     }
