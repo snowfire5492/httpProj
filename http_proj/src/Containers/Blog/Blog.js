@@ -7,7 +7,9 @@ import FullPost from './FullPost/FullPost';
 import './Blog.css';
 import NewPost from './NewPost/NewPost';
 class Blog extends Component {
-
+    state = {
+        auth: false
+    }
     
 
     
@@ -31,7 +33,7 @@ class Blog extends Component {
                 </header>
                 
                 <Switch>
-                    <Route path="/new-post" component={NewPost} />
+                    {this.state.auth ? <Route path="/new-post" component={NewPost} /> : null }
                     <Route path="/" component={Posts}/>
                     <Redirect from="/" to="/posts" />
                 </Switch>
