@@ -6,12 +6,13 @@ import Blog from './Containers/Blog/Blog';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div className="App">
-          <Blog />
-        </div>
-      </BrowserRouter>
-      
+      <React.Fragment>
+        <BrowserRouter>
+          <div className="App">
+            <Blog />
+          </div>
+        </BrowserRouter>
+      </React.Fragment>
     );
   }
 }
